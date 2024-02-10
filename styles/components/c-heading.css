@@ -1,0 +1,25 @@
+.c-heading {
+  &.h2 {
+    --default-color: var(--c-darkgray);
+    font-family: var(--ff-tertiary);
+    font-size: clamp(var(--spacing-15), 0.8333rem + 4.6296vi, var(--spacing-40));
+    text-transform: uppercase;
+    color: var(--default-color);
+    letter-spacing: 0;
+    line-height: 1;
+
+    &.variant-primary {
+      color: var(--default-color);
+    }
+
+    &.variant-secondary {
+      color: var(--c-white);
+      text-shadow: var(--c-black) var(--spacing-1) 0 0px;
+    }
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+}

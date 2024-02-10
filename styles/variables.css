@@ -1,0 +1,55 @@
+/*
+    ff: font-family;
+    c: color;
+    fw: font-weight;
+    tt: text-transform;
+    h: height;
+    lh: line height  ;
+    p: position;
+*/
+
+:root {
+  /* 2px */
+  --spacing-1: .125rem;
+  --spacing-2: .25rem;
+  --spacing-3: .375rem;
+  --spacing-4: .5rem;
+  --spacing-5: .625rem;
+  --spacing-6: .75rem;
+  --spacing-7: .875rem;
+  --spacing-8: 1rem;
+  --spacing-9: 1.125rem;
+  --spacing-10: 1.25rem;
+  --spacing-12: 1.5rem;
+  --spacing-15: 1.875rem;
+  --spacing-17: 2.125rem;
+  --spacing-20: 2.5rem;
+  --spacing-23: 2.875rem;
+  --spacing-30: 3.75rem;
+  --spacing-38: 4.75rem;
+  --spacing-40: 5rem;
+  --spacing-45: 5.625rem;
+  --spacing-76: 9.5rem;
+  --spacing-100: 12.5rem;
+  --spacing-150: 9.75rem;
+  --spacing-190: 17.5rem;
+
+  --fs-sm: 0.875rem;
+  --fs-lg: var(--spacing-10);
+
+  --ff-primary: ALS Sector Bold Bold;
+  --ff-secondary: ALS Sector Regular Regular;
+  --ff-tertiary: Inter;
+  --fs-base: clamp(var(--spacing-7), 0.75rem + 0.5556vi, var(--spacing-10));
+
+  --c-black: #000;
+  --c-white: #fff;
+  --c-lightyellow: #FFE603;
+  --c-greenyellow: #BBFF2C;
+  --c-darkgray: #2B2D35;
+  --c-lavenderblue: #d2d0f7;
+  --c-lightblue: #792AFF;
+  --c-darkblue: #200153;
+  --c-orange: #FF6A00;
+  --c-malachite: #04C800;
+}

@@ -1,0 +1,11 @@
+.c-logo {
+  font-size: var(--spacing-23);
+  line-height: 1;
+  font-family: var(--ff-tertiary);
+  font-weight: bold;
+  color: var(--c-greenyellow);
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}

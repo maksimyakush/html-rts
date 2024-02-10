@@ -1,0 +1,25 @@
+.c-menu {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  height: var(--spacing-15);
+  width: var(--spacing-20);
+
+  background-image: url(/images/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.opened {
+    background-image: url(/images/hamburger-close.svg);
+
+  }
+}

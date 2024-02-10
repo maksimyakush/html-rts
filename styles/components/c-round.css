@@ -1,0 +1,26 @@
+.c-round {
+  --dafault-size: var(--spacing-8);
+  --full: 100%;
+
+  display: inline-flex;
+  border: 1px solid var(--c-black);
+  border-radius: 50%;
+  height: var(--dafault-size);
+  aspect-ratio: 1;
+
+  &.color-success {
+    background: var(--c-orange);
+  }
+
+  &.color-warning {
+    background: var(--c-lightyellow);
+  }
+
+  &.color-danger {
+    background: var(--c-malachite);
+  }
+
+  &.full {
+    height: var(--full);
+  }
+}

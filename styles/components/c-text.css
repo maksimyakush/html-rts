@@ -1,0 +1,73 @@
+.c-text {
+  color: var(--default-color);
+  font-size: var(--fs-base);
+  font-family: var(--ff-primary);
+
+  &.size-lg {
+    font-size: var(--fs-lg);
+  }
+
+  &.opacity-50 {
+    opacity: 50%;
+  }
+
+  &.color-black {
+    color: var(--c-black);
+  }
+
+  &.color-white {
+    color: var(--c-white);
+  }
+
+  &.color-lightyellow {
+    color: var(--c-lightyellow);
+  }
+
+  &.color-greenyellow {
+    color: var(--c-greenyellow);
+  }
+
+  &.color-darkgray {
+    color: var(--c-darkgray);
+  }
+
+  &.color-lavenderblue {
+    color: var(--c-lavenderblue);
+  }
+
+  &.color-lightblue {
+    color: var(--c-lightblue);
+  }
+
+  &.color-darkblue {
+    color: var(--c-darkblue);
+  }
+
+  &.color-orange {
+    color: var(--c-orange);
+  }
+
+  &.color-malachite {
+    color: var(--c-malachite);
+  }
+
+  &.ff-primary {
+    font-family: var(--ff-primary);
+  }
+
+  &.ff-secondary {
+    font-family: var(--ff-secondary);
+  }
+
+  &.ff-tertiary {
+    font-family: var(--ff-tertiary);
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}

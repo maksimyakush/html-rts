@@ -1,0 +1,5 @@
+.c-container {
+  width: clamp(min(100% - 40px, 440px), 100vi, min(100% - 120px, 1320px));
+  margin-inline: auto;
+  height: 100%;
+}

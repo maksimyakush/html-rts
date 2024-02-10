@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --section-height: 100vh;
+  /* 75px */
+  --header-height: 3.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--c-black);
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: var(--header-height);
+  z-index: 999;
+  background-color: var(--c-darkblue);
+}
+
+.section-main {
+  height: var(--section-height);
+  background-color: var(--c-darkblue);
+  position: relative;
+
+  & .stone-img {
+    --width: 78px;
+    --scale: 1.56;
+    position: absolute;
+    bottom: 12%;
+    left: 11%;
+    width: var(--width);
+    height: calc(var(--width) * 0.95);
+    z-index: 0;
+
+    @media screen and (min-width: 768px) {
+      scale: var(--scale);
+    }
+
+    &>img {
+      position: relative;
+      animation: 3s linear 1s infinite alternate move;
+    }
+
+    & .planets-img {
+      --width: 14px;
+      position: absolute;
+      bottom: -20px;
+      left: -10px;
+      width: var(--width);
+      height: var(--width);
+
+      @media screen and (min-width: 768px) {
+        scale: var(--scale);
+      }
+    }
+
+    & .stone-small-img {
+      --width: 14px;
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: var(--width);
+      height: var(--width);
+
+      @media screen and (min-width: 768px) {
+        scale: var(--scale);
+      }
+    }
+  }
+
+  & .jupiter-img {
+    position: absolute;
+    right: 1%;
+    top: 15%;
+    width: 425px;
+    height: 355px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  & .rocket-boss-img {
+    --height: 116px;
+    position: absolute;
+    height: var(--height);
+    width: 100px;
+    top: calc(var(--height) * -1);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+      --height: 108px;
+      height: var(--height);
+      width: 92px;
+      top: calc(var(--height) * -1);
+      left: 14%;
+      transform: translateX(0%);
+
+
+    }
+  }
+}
+
+.section-about {
+  position: relative;
+  height: var(--section-height);
+  background-color: #0090ff;
+}
+
+.section-skills {
+  position: relative;
+  height: var(--section-height);
+  background-color: #792AFF;
+}
+
+.section-portfolio {
+  position: relative;
+  height: var(--section-height);
+  background-color: var(--c-darkblue);
+}
+
+.section-feedback {
+  position: relative;
+  height: calc(var(--section-height) + 130px);
+  background-color: #792AFF;
+}
+
+footer {
+  background-color: var(--c-darkblue);
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
